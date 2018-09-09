@@ -1,25 +1,13 @@
-$color-orange: #f98a09;
-$grey: #444;
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+// BASE
+@import "base/base";
+@import "base/variables";
 
-    height: 100vh;
-    background: $grey;
+// COMPONENTS
+//@import "components/grid";
 
-    & img {
-        border-radius: 100%;
-        border: 3px solid red;
-    }
+// LAYOUT
+@import "layout/grid";
 
-    & h1 {
-        color: white;
-        font-family: sans-serif;
-        font-size: 3rem;
-        text-shadow:  0 0 20px black;
-        padding: 2px;
-    }
-}
+// SECTION
+//@import "section/grid";
