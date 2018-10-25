@@ -41,6 +41,19 @@ module.exports = {
                 ]
             },
             {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '.'
+                        }
+                    },
+                    'css-loader',
+                    "postcss-loader",
+                ]
+            },
+            {
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
@@ -81,7 +94,7 @@ module.exports = {
                   loader: 'html-loader',
                   options: {
                       minimize: true,
-                      attrs: ['img:src', 'source:src']
+                      attrs: ['img:src', 'source:src', 'use:href']
                   }
                 }
             },

@@ -1,3 +1,5 @@
+import normalize from "../scss/vendor/normalize.css";
+import skeleton from "../scss/vendor/skeleton.css";
 import style from "../scss/main.scss";
 //import img from "../images/wow.jpg";
 import {myFunc} from "./test.js";

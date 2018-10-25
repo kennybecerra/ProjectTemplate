@@ -36,6 +36,14 @@ module.exports = {
                 ]
             },
             {
+                test: /\.css$/,
+                use: [
+                    'style-loader', 
+                    'css-loader',
+                    "postcss-loader",
+                ]
+            },
+            {
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
@@ -75,7 +83,7 @@ module.exports = {
                 use: {
                   loader: 'html-loader',
                   options: {
-                    attrs: ['img:src', 'source:src']
+                    attrs: ['img:src', 'source:src', 'use:href']
                     }
                 }
             },
